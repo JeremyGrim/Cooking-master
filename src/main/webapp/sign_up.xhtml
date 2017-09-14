@@ -37,21 +37,33 @@
 	
 		<div id="main">
 		
-			<h1>Decouvrez les meilleurs recettes</h1>
-			<div class="line"></div>
-			<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum non velit accumsan iaculis id eget tortor. Proin vehicula massa urna, vitae pulvinar turpis hendrerit non.</h2>
 			
-			<div id="engine-recipe">
-				<span class="title">Trouver une recette</span>
+			<div id="sign_up">
+				<span class="title">Créer un compte</span>
 				
 				<div id="line-engine">
 					<h:form>
-					   	<b:inputText placeholder="Taper un ou plusieurs ingredient" value="#{inputTextBean.text}"
-					                onkeyup="ajax:inputTextBean.capitalizeText()" update="@next" />
+						<b:inputText placeholder="Pseudo" value="#{inputTextBean.text}"
+						             onkeyup="ajax:inputTextBean.capitalizeText()" update="@next" />
 					  	<b:label text="#{inputTextBean.map['key']}" id="label"/>
 					</h:form>
+					<h:form>  	
+					   	<b:inputText placeholder="Votre Email" value="#{inputTextBean.text}"
+					                onkeyup="ajax:inputTextBean.capitalizeText()" update="@next" />
+					  	<b:label text="#{inputTextBean.map['key']}" id="label"/>
+				  	</h:form>
+					<h:form> 	
+					  	<b:inputText placeholder="Password" value="#{inputTextBean.text}"
+					                onkeyup="ajax:inputTextBean.capitalizeText()" update="@next" />
+					  	<b:label text="#{inputTextBean.map['key']}" id="label"/>
+				  	</h:form>
+					<h:form>  	
+					  	<b:inputText placeholder="Confirmation du password" value="#{inputTextBean.text}"
+					                onkeyup="ajax:inputTextBean.capitalizeText()" update="@next" />
+					  	<b:label text="#{inputTextBean.map['key']}" id="label"/>
+				  	</h:form>
 					<a href="#">
-						<div class="btn_yelow">Rechercher</div>
+						<div class="btn_yelow">Créer mon compte</div>
 					</a>
 						
 				

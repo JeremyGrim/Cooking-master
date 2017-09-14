@@ -10,6 +10,53 @@ a {
 	
 }
 
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #2b314a;
+	margin-bottom: 20px;
+	display: block;
+}
+
+
+.btn_stroke {
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    border-radius: 50px;
+    border: solid 2px #ffffff;
+}
+
+.btn_no_stroke {
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    border-radius: 50px;
+    border: solid 0px #ffffff;
+}
+
+.btn_yelow {
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    background: #eba523;
+    line-height: 45px;
+    color: white;
+    border-radius: 50px;
+}
+
+.line{
+	width: 30px;
+	height: 2px;
+	background: #2b314a;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
 #menu-container {
 	background: #2b314a;
 	height: 80px;
@@ -20,15 +67,16 @@ a {
 	
 }
 
-h1 {
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	margin-top: 300px;
-}
+
 
 #menu {
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto;
+}
+
+#menu .btn_stroke, #menu .btn_no_stroke {
+	float: right;
+	margin-left: 20px;
 }
 
 #menu .logo {
@@ -46,7 +94,7 @@ h1 {
 }
 
 #menu ul li {
-	display: inline;
+	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #fff;
@@ -58,18 +106,86 @@ h1 {
 	
 }
 
-#menu ul li:hover {
-	display: inline-block;
+#menu ul li:hover  {
 	color: #2b314a;
 	background: #eba523;
 }
+
+#menu a .btn_stroke, #menu a .btn_no_stroke {
+	margin-top: 15px;
+}
+
+a .btn_stroke:hover {
+	background: #fff;
+	color: #2b314a;
+	
+}
+
 
 
 #main{
 	background-size: cover;
 	position: absolute;
-	top: 0;
-	width:100%;
+	width: 100%;
 	height:100vh;
-	background: url("#{resource['img/bg.jpg']}");
+	background: url("#{resource['img/bg.jpg']}") no-repeat center;
 }
+
+#main h1 {
+	font-family: 'Lobster', sans-serif;
+	text-align: center;
+	margin-top: 300px;
+	color: #eba523;
+}
+
+#main h2 {
+	text-align: center;
+	margin-top: 20px;
+	width: 600px;
+	font-weight: normal;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #2b314a;
+}
+
+#main #engine-recipe,#main #sign_in, #main #sign_up {
+	padding: 15px;
+	width: 1000px;
+	border-radius: 7px;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 0 auto;
+	margin-top: 200px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); 
+}
+
+#main #sign_in, #main #sign_up {
+	margin-top: 20%;
+}
+
+#main #engine-recipe .form-control {
+    width: 70%;
+    float: left;
+    height: 45px;
+}
+
+#main #engine-recipe .btn_yelow {
+    width: 28%;
+    float: right;
+}
+
+#main #sign_in, #main #sign_up {
+    width: 400px;
+}
+
+#main #sign_in .form-control, .btn_yelow {
+    width: 100%;
+}
+
+#main #sign_in .title, #main #sign_up .title {
+    text-align: center;
+}
+
+
+
+

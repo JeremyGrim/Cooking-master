@@ -39,7 +39,7 @@ public class AuthenticationFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
         HttpSession session = request.getSession(false);
-        String loginURL = request.getContextPath() + "/connexion.xhtml";
+        String loginURL = request.getContextPath() + "/sign_in.xhtml";
         
         boolean loggedIn = (session != null) && (session.getAttribute("user") != null);
         
